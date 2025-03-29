@@ -1,0 +1,205 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  font-family: "Arial", sans-serif;
+}
+
+/* Main Container Styles */
+.output-container,
+.config-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Header Styles */
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+/* Button Styles */
+.action-button,
+.save-btn,
+.config-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.action-button:hover,
+.save-btn:hover,
+.config-btn:hover {
+  background: linear-gradient(135deg, #45a049, #2e7d32);
+  transform: scale(1.05);
+}
+
+/* Form Elements */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+select {
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Action List Styles */
+.action-sequence {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e3f2fd;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bbdefb;
+  margin-top: 10px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.action-index {
+  font-weight: bold;
+  color: #1976d2;
+  margin-right: 8px;
+}
+
+.action-type {
+  flex-grow: 1;
+  color: #333;
+}
+
+/* Action Controls */
+.action-controls button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  font-size: 14px;
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.action-controls button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.1);
+}
+
+/* Button Arrows */
+.move-btn {
+  background-color: #03a9f4;
+}
+
+.move-btn:hover {
+  background-color: #0288d1;
+}
+
+/* Save & Preview Button */
+.save-btn {
+  margin-top: 20px;
+  width: 100%;
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+}
+
+.save-btn:hover {
+  background: linear-gradient(135deg, #fb8c00, #e65100);
+}
+
+
+.results-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.result-item {
+  background-color: #e8f5e9;
+  padding: 12px;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  margin-top: 10px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Action Summary */
+.actions-summary {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #f1f8e9;
+  border: 1px solid #c5e1a5;
+  border-radius: 8px;
+}
+
+/* Config Button */
+.config-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #2196f3, #1e88e5);
+  margin-top: 20px;
+}
+
+.config-btn:hover {
+  background: linear-gradient(135deg, #1976d2, #1565c0);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .output-container,
+  .config-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .action-button,
+  .save-btn,
+  .config-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}
